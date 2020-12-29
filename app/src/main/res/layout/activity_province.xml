@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:id="@+id/address_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+       android:background="@null"
+        android:paddingVertical="@dimen/dp_20"
+        android:id="@+id/name_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="姓名"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#CAC9C9"
+        android:layout_height="@dimen/dp_2" />
+    <EditText
+        android:background="@null"
+        android:paddingVertical="@dimen/dp_20"
+        android:id="@+id/name_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号码"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#CAC9C9"
+        android:layout_height="@dimen/dp_2" />
+    <EditText
+        android:background="@null"
+        android:paddingVertical="@dimen/dp_20"
+        android:id="@+id/address_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="省份、城市、区县"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#CAC9C9"
+        android:layout_height="@dimen/dp_2" />
+    <EditText
+        android:background="@null"
+        android:paddingVertical="@dimen/dp_20"
+        android:id="@+id/detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="详细地址，如街道、楼盘号等"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#CAC9C9"
+        android:layout_height="@dimen/dp_2"/>
+    <TextView
+        android:background="@null"
+        android:paddingVertical="@dimen/dp_20"
+        android:id="@+id/base_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设为默认地址"
+        android:gravity="center"
+        android:textColor="#111"/>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--android:maxLines="1"    最大长度只能是一行-->
+    <EditText
+        android:id="@+id/me_regist_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/sp_20"
+        android:hint="账号"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--android:maxLines="1"    最大长度只能是一行-->
+    <EditText
+        android:id="@+id/me_regist_input_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/sp_20"
+        android:hint="@string/hint_login_pw"
+        android:maxLines="1"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/me_regist_input_username" />
+
+    <!--android:maxLines="1"    最大长度只能是一行-->
+    <EditText
+        android:id="@+id/me_regist_input_pw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/sp_20"
+        android:maxLines="1"
+        android:hint="确认密码"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/me_regist_input_pw" />
+
+    <EditText
+        android:id="@+id/me_regist_input_verification"
+        android:layout_width="@dimen/dp_190"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="验证码"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/sp_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/me_regist_input_pw2" />
+
+    <ImageView
+        android:id="@+id/me_regist_btn_verification"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_37"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@+id/me_regist_input_verification"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/me_regist_input_pw2" />
+
+    <Button
+        android:id="@+id/me_regist_btn_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/sp_20"
+        android:text="注册"
+        android:gravity="center"
+        android:background="#E4DFDF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/me_regist_btn_verification" />
+</androidx.constraintlayout.widget.ConstraintLayout>

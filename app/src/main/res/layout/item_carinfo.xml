@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="@dimen/dp_10"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="#E3E1E1"
+        android:id="@+id/img_carinfo"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"/>
+    <TextView
+        android:textColor="#8A8787"
+        android:layout_alignTop="@id/img_carinfo"
+        android:id="@+id/txt_carinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_carinfo"
+        android:layout_marginLeft="@dimen/dp_10"/>
+    <TextView
+        android:textColor="#8A8787"
+        android:layout_alignTop="@id/img_carinfo"
+        android:layout_marginRight="@dimen/dp_10"
+        android:id="@+id/txt_carinfo_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp_80"
+        android:id="@+id/txt_carinfo_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_carinfo"
+        android:layout_alignBottom="@id/img_carinfo"
+        android:layout_marginLeft="@dimen/dp_10"/>
+</RelativeLayout>

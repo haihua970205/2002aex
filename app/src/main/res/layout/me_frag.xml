@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        android:background="#272626">
+
+        <ImageView
+            android:id="@+id/login_head"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@mipmap/denglu" />
+
+        <TextView
+            android:id="@+id/login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/login_head"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="点击登录"
+            android:textColor="#FAF6F6"
+            android:textSize="@dimen/sp_20"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/login_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/login_head"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="呢称"
+            android:textColor="#FAF6F6"
+            android:textSize="@dimen/sp_20"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/jump_login"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@mipmap/jump" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:numColumns="3"
+        android:verticalSpacing="24dp" />
+</LinearLayout>

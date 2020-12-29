@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgChannel"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"/>
+    <TextView
+        android:textColor="#8A8787"
+        android:layout_below="@id/imgChannel"
+        android:id="@+id/decChannel"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

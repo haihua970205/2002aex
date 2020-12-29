@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeFrag"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.example.test_kao.ui.home.HomeFrag"
+        android:label="HomeFrag" />
+    <fragment
+        android:id="@+id/topicFrag"
+        android:name="com.example.test_kao.ui.topic.TopicFrag"
+        android:label="TopicFrag" />
+    <fragment
+        android:id="@+id/shopFrag"
+        android:name="com.example.test_kao.ui.shop.ShopFrag"
+        android:label="ShopFrag" />
+    <fragment
+        android:id="@+id/sortFrag"
+        android:name="com.example.test_kao.ui.sort.SortFrag"
+        android:label="SortFrag" />
+    <fragment
+        android:id="@+id/meFrag"
+        android:name="com.example.test_kao.ui.me.MeFrag"
+        android:label="MeFrag" />
+</navigation>
